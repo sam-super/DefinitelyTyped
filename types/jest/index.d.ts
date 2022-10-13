@@ -1282,7 +1282,7 @@ declare namespace jest {
          *
          * myMockFn((err, val) => console.log(val)); // false
          */
-        mockImplementationOnce(fn: (...args: Y) => T): this;
+        mockImplementationOnce(?fn: (...args: Y) => T): this;
         /**
          * Temporarily overrides the default mock implementation within the callback,
          * then restores its previous implementation.

@@ -578,6 +578,7 @@ const spy3Mock = spy3
     .mockImplementation((arg: {}) => arg)
     .mockImplementation((...args: string[]) => args.join(''))
     .mockImplementationOnce(() => '')
+    .mockImplementationOnce()
     .mockName('name')
     .mockReturnThis()
     .mockReturnValue('value')
